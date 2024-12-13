@@ -63,7 +63,7 @@ public class Punctuation //declare public class!!
     {
         for (int x=0;x<word.length();x++) 
         {
-            char jeff = word.charAt(x);
+            char jeff = word.charAt(x); //my friend wanted to name the variable jeff, after her drawing of a turtle
             if (",?.!'\";:([{-)}]".indexOf(jeff) >= 0) //shows the possible characters in the text and when it reads them with a wods it will only print that word which is next to the punctuation
             {
                 return true; //if true it will print that specific word
