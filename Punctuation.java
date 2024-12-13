@@ -19,15 +19,16 @@ public class Punctuation //declare public class!!
         " We have before us an ordeal of the most grievous kind. We have before us many, many long months of struggle and of suffering. You ask, what is our policy? I will say: It is to wage war, by sea, land and air, with all our might and with all the strength that God can give us; to wage war against a monstrous tyranny, never surpassed in the dark and lamentable catalogue of human crime. That is our policy. You ask, what is our aim? I can answer in one word: victory. " +
         " Victory at all costs, victory in spite of all terror, victory, however long and hard the road may be; for without victory, there is no survival. Let that be realised; no survival for the British Empire, no survival for all that the British Empire has stood for, no survival for the urge and impulse of the ages, that mankind will move forward towards its goal. " +
         " But I take up my task with buoyancy and hope. I feel sure that our cause will not be suffered to fail among men. At this time I feel entitled to claim the aid of all, and I say, \"Come then, let us go forward together with our united strength.\"";
-        program.searchIt(text); //call searchIt method using the string called text
+       
+		searchIt(text);       
     }
-    public void searchIt(String text) //searchIt method
+    public static void searchIt(String text) //searchIt method
     {
         String punctuationWords = getPunctuationWords(text);
         printWords(punctuationWords);
     }
 
-    public String getPunctuationWords(String text) 
+    public static String getPunctuationWords(String text) 
     {
         String punctuationWords = "";
         int temp=0; //create an int called temp and D&I
@@ -59,7 +60,7 @@ public class Punctuation //declare public class!!
         return punctuationWords; //return the strings with punctuation
     }
 
-    public boolean checkForPunctuation(String word) 
+    public static boolean checkForPunctuation(String word) 
     {
         for (int x=0;x<word.length();x++) 
         {
@@ -71,7 +72,7 @@ public class Punctuation //declare public class!!
         }
         return false; //if false it will ingore that word and will continue reading the string untill a word is next to a punctuation
     }
-    public void printWords(String words) 
+    public static void printWords(String words) 
     {
 		System.out.print("\n\n\n");
 		System.out.println("these are words with punctuation:");
